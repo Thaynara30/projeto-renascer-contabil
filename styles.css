@@ -1,0 +1,200 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.caixa-superior{
+    background-image: url("./ceu.png");
+    height: 90vh;
+    background-size: cover;
+    
+}
+.cabecalho{
+    padding-top:38px;
+    padding-left: 35px;
+    
+}
+.titulo-cabecalho{
+    font-size: 80px;
+    color: #daa520;
+    text-shadow: 0.8125rem 0.8125rem 1.25rem black;
+    display: inline;
+    font-weight: 500;
+    margin-right: 50px;
+}
+.link-cabecalho{
+    font-size: 25px;
+    color: rgb(20, 20, 20);
+    text-shadow: 0.8125rem 0.8125rem 1.25rem black;
+    cursor:pointer;
+    display: inline;
+    margin-left: 35px;
+
+}
+h1{
+    font-size: 80px;
+    color: #daa520;
+    text-shadow: 0.8125rem 0.8125rem 1.25rem black; 
+    position: relative;
+    top:200px;
+    margin-left: 35px;
+    font-weight: 700;
+
+}
+form{
+    
+    opacity: 0;
+    transition: opacity 1s linear;
+    background-color: rgb(249, 251, 252);
+    border-radius: 10px;
+    float:right;
+    padding: 20px;
+    margin-right: 50px;
+    position: relative;
+    bottom: 90px;
+}
+.mostrar-formulario{
+  
+    opacity: 1;
+}
+input{
+    display: block;
+    background-color: #f9f9f9 ;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    height: 50px;
+    width: 350px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+textarea{
+    display: block;
+    height: 90px;
+    width: 350px;
+    border-radius: 5px;
+    background-color: #f9f9f9 ;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.titulo-formulario{
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: rgb(20, 20, 20);
+}
+label{
+    font-size: 25px;
+    color: rgb(20, 20, 20);
+}
+button{
+    width: 350px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #faf9c9;
+    color:#6d7255;
+    border: none;
+    border-radius: 5px;
+}
+.caixa-central{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+
+}
+#titulo-meio{
+    font-size: 40px;
+    color: rgb(20, 20, 20);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.card{
+    width: 400px;
+    height: 325px;
+    border-radius: 10px;
+    background-color: #ffff;
+    border: 1px solid #daa520;
+    
+}
+.titulo-card{
+    
+    background: #daa520;
+    color: #ffff;
+    text-align:center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    
+   
+}
+
+ul{
+    padding: 20px;
+    margin-top: 10px;
+
+}
+li{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+p{
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center ;
+}
+.caixa-inferior{
+    background-color: #daa520;
+}
+#titulo-inferior{
+    color:#ffff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+.paragrafo-inferior{
+    color:#ffff;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 50px 50px 50px;
+}
+@media screen  and (max-width: 667px) {
+    .caixa-superior{
+        height: 100vh;
+        width: 100vw;
+    }
+    .link-cabecalho{
+        display:none;
+    } 
+    .titulo-cabecalho{
+        position: relative;
+        left: 50px;
+    }
+    h1{
+        font-size: 30px;
+        margin-bottom: 150px;
+        text-align: center;
+        position: relative;
+        top: 1px;
+        right: 20px;
+        text-decoration-line: underline;
+    }  
+    .card{
+        display: none;
+    }
+   #titulo-meio{
+    display: none;
+   }
+   form{
+    opacity: 1;
+    margin-right: 0px;
+    bottom: 50px;
+    padding: 15px;
+    width: 100vw
+   }.caixa-inferior{
+    width: 100vw
+   }
+}
+

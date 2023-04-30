@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Renascer Escritório</title>
+</head>
+<body>
+    <div class="caixa-superior">
+     <div class="cabecalho">
+        <h2 class="titulo-cabecalho">RETéC</h2>
+        <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a>
+        <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+        <a class="link-cabecalho" onclick="chameiOFormulario()">Contato</a>
+     </div>
+
+        <h1>Renascer Escritório Técnico Contabil </h1>
+        <form id="fomulario-contato" action="https://formsubmit.co/renascercontabil4@gmail.com" method="POST">
+            <h3 class="titulo-formulario">Entre em contato</h3>
+            <label>
+                Nome
+                <input type="text" name="Nome" placeholder="Digite seu nome" required />
+            </label>
+            <label>
+                E-mail
+                <input type="email" name="e-mail" placeholder="Digite seu e-mail" required/>
+            </label>
+            <label>
+                WhatsApp
+                <input type="tel" name="telefone" placeholder="Digite seu telefone" required/>
+            </label>
+            <label>
+                Fale conosco
+                <textarea name="info" placeholder="Qual sua duvida?"></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <h2 id="titulo-meio"> Nossos Serviços</h2>
+    <div class="caixa-central">
+       <div class="card">
+            <h3 class="titulo-card">Contabilidade completa</h3>
+            <ul>
+                <li>Legalização de empresa abertura e baixa</li>
+                <li>MEI (Micro Empreendedor Individual)</li>
+                <li>Escrituração Fiscal e RH</li>
+                <li>Consultoria e pesquisa de debitos fiscais</li>
+                <li>Declaração de imposto de renda (Pessoa Física e Juridica)</li>
+            </ul>
+        </div>
+         <div class="card">
+            <h3 class="titulo-card"> O que é um MEI?</h3>
+           <p>O MEI (Microempreendedor Individual) é a pessoa que trabalha por conta própria e se legaliza como pequeno empresário
+            . O MEI é um registro oficial de alguém que trabalha como profissional autônomo ou tem um micro negócio. Quando você se cadastra como um MEI, você passa a ter CNPJ, ou seja, tem facilidades com a abertura de conta bancária, no pedido de empréstimos e na emissão de notas fiscais, além de ter obrigações e direitos de uma pessoa jurídica.
+           </p>
+        </div>
+        <div class="card">
+            <h3 class="titulo-card"> O que é O Imposto de Renda?</h3>
+           <p>O Imposto de Renda é um tributo federal que incide sobre a renda e os proventos de contribuintes brasileiros e estrangeiros que possuem residência fiscal no Brasil. Ele é cobrado anualmente pela Receita Federal e é obrigatório para pessoas físicas e jurídicas que atendem a determinados critérios</p>
+        </div>
+    </div> 
+    <div class="caixa-inferior">   
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quia eveniet repellendus reprehenderit accusamus hic numquam nisi, consectetur quae necessitatibus voluptatem doloribus? Blanditiis soluta sed assumenda voluptatem deserunt iure incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ad, qui, itaque dolore quaerat, repellat laboriosam sit dolorem illum ut doloribus! Quidem nemo doloremque blanditiis sunt. Cumque qui nostrum sunt!</p>
+    </div>
+</body>
+<script>
+    let formulario = document.getElementById("fomulario-contato")
+
+    console.log(formulario)
+    function chameiOFormulario(){
+        formulario.className = "mostrar-formulario"
+    }
+</script>
+</html>
