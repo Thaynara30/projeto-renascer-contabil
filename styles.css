@@ -156,9 +156,14 @@ p{
 }
 .paragrafo-inferior{
     color:#ffff;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     padding: 20px 50px 50px 50px;
+}
+.contato{
+    padding: 8px;
+    margin-left: 10px; 
+    
 }
 @media screen  and (max-width: 667px) {
     .caixa-superior{
